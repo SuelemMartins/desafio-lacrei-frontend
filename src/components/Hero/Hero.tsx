@@ -44,7 +44,7 @@ export function Hero() {
 
         <ImageWrapper>
           <Image
-            src="/images/image.png"
+            src="/images/acolhimento-lacrei.webp"
             alt="Pessoa abraçando uma bandeira LGBTQIAPN+"
             fill
             priority
