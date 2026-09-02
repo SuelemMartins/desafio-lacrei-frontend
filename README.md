@@ -1,4 +1,4 @@
-# Desafio Front-end — Lacrei Saúde
+# Desafio Front-end Lacrei Saúde
 
 Projeto desenvolvido como parte de um desafio técnico de Front-end, com o objetivo de criar uma experiência digital inclusiva, acessível e responsiva para a Lacrei Saúde.
 
