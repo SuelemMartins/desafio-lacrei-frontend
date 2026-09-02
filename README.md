@@ -1,4 +1,5 @@
 # Desafio Front-end Lacrei Saúde
+<img width="1008" height="677" alt="image" src="https://github.com/user-attachments/assets/1a381ad9-7eed-4fae-a668-f5fb13d25bd9" />
 
 Projeto desenvolvido como parte de um desafio técnico de Front-end, com o objetivo de criar uma experiência digital inclusiva, acessível e responsiva para a Lacrei Saúde.
 
