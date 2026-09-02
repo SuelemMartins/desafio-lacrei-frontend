@@ -39,7 +39,7 @@ O projeto foi desenvolvido com atenção à organização dos componentes, respo
 
 | Rota | Descrição |
 | --- | --- |
-| `/` | Página principal |
+| `https://desafio-lacrei-frontend-9suqzyyrn-suelemmartins-projects.vercel.app/` | Página principal |
 | `/denuncia` | Canal de denúncia |
 
 ## Estrutura principal
