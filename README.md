@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Desafio Front-end — Lacrei Saúde
 
-## Getting Started
+Projeto desenvolvido como parte de um desafio técnico de Front-end, com o objetivo de criar uma experiência digital inclusiva, acessível e responsiva para a Lacrei Saúde.
 
-First, run the development server:
+## Sobre o projeto
 
-```bash
+A aplicação apresenta informações sobre a missão e os pilares da Lacrei Saúde, além de disponibilizar uma página com um formulário demonstrativo para denúncias.
+
+O projeto foi desenvolvido com atenção à organização dos componentes, responsividade, acessibilidade e qualidade do código.
+
+## Funcionalidades
+
+- Página inicial responsiva
+- Navegação entre as seções da página
+- Seção de apresentação
+- Seção “Nossos Pilares”
+- Seção “Nossa Missão”
+- Footer com links institucionais
+- Página separada para denúncias
+- Formulário com campos obrigatórios
+- Layout adaptado para celular, tablet e desktop
+- Indicadores de foco para navegação pelo teclado
+- Textos alternativos nas imagens
+
+> O formulário possui finalidade demonstrativa. As informações preenchidas não são armazenadas.
+
+## Tecnologias utilizadas
+
+- Next.js
+- React
+- TypeScript
+- Styled-components
+- HTML semântico
+- CSS responsivo
+- ESLint
+- Git e GitHub
+
+## Rotas
+
+| Rota | Descrição |
+| --- | --- |
+| `/` | Página principal |
+| `/denuncia` | Canal de denúncia |
+
+## Estrutura principal
+
+```text
+src
+├── app
+│   ├── denuncia
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── providers.tsx
+├── components
+│   ├── ComplaintForm
+│   ├── Footer
+│   ├── Header
+│   ├── Hero
+│   ├── Mission
+│   └── Pillars
+├── lib
+│   └── registry.tsx
+└── styles
+    ├── GlobalStyles.ts
+    ├── styled.d.ts
+    └── theme.ts
+Como executar o projeto
+
+Primeiro, clone o repositório:
+Como executar o projeto
+git clone https://github.com/SuelemMartins/desafio-lacrei-frontend.git
+
+Entre na pasta:
+npm install
+
+Instale as dependências:
+npm install
+
+Inicie o ambiente de desenvolvimento:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Depois, acesse:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Verificação do projeto
+Para analisar a qualidade do código:
+npm run lint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para gerar a versão de produção:
+npm run build
+O projeto foi verificado com ESLint e compilado com sucesso para produção.
 
-## Learn More
+Responsividade
 
-To learn more about Next.js, take a look at the following resources:
+A interface foi adaptada para diferentes tamanhos de tela:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Celulares
+Tablets
+Notebooks
+Desktops
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Os componentes reorganizam seu conteúdo automaticamente para preservar a leitura e a navegação.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Autora
+Desenvolvido por Suelem Martins.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
