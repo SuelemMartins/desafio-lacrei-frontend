@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   padding: 90px 24px 24px;
-  background-color: #ffffff;
-  border-top: 1px solid #dce9e4;
+  background-color: ${({ theme }) => theme.colors.background};
+  border-top: 1px solid ${({ theme }) => theme.colors.emerald20};
 `;
 
 export const FooterContent = styled.div`
@@ -39,7 +39,8 @@ export const Brand = styled.a`
   align-items: center;
   gap: 10px;
   margin-bottom: 18px;
-  color: #071d1a;
+
+  color: ${({ theme }) => theme.colors.heading};
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -51,8 +52,9 @@ export const LogoCircle = styled.span`
   height: 38px;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background-color: #008f6b;
+
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 50%;
   font-size: 18px;
 `;
@@ -60,7 +62,8 @@ export const LogoCircle = styled.span`
 export const BrandDescription = styled.p`
   max-width: 240px;
   margin: 0 0 22px;
-  color: #425b56;
+
+  color: ${({ theme }) => theme.colors.body};
   font-size: 15px;
   line-height: 1.6;
 `;
@@ -76,7 +79,8 @@ export const SocialLink = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #008f6b;
+
+  color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
   transition: color 0.2s ease;
 
@@ -91,11 +95,11 @@ export const SocialLink = styled.a`
   }
 
   &:hover {
-    color: #006f54;
+    color: ${({ theme }) => theme.colors.primaryHover};
   }
 
   &:focus-visible {
-    outline: 3px solid #65d6b4;
+    outline: 3px solid ${({ theme }) => theme.colors.emerald30};
     outline-offset: 4px;
     border-radius: 4px;
   }
@@ -109,43 +113,47 @@ export const FooterColumn = styled.div`
 
 export const ColumnTitle = styled.h3`
   margin: 0 0 18px;
-  color: #071d1a;
+
+  color: ${({ theme }) => theme.colors.heading};
   font-size: 16px;
   font-weight: 700;
 `;
 
 export const FooterLink = styled.a`
   margin-bottom: 14px;
-  color: #425b56;
+
+  color: ${({ theme }) => theme.colors.body};
   font-size: 15px;
   text-decoration: none;
   transition: color 0.2s ease;
 
   &:hover {
-    color: #008f6b;
+    color: ${({ theme }) => theme.colors.primary};
     text-decoration: underline;
   }
 
   &:focus-visible {
-    outline: 3px solid #65d6b4;
+    outline: 3px solid ${({ theme }) => theme.colors.emerald30};
     outline-offset: 3px;
   }
 `;
 
 export const FooterBottom = styled.div`
   padding-top: 24px;
-  border-top: 1px solid #dce9e4;
+  border-top: 1px solid ${({ theme }) => theme.colors.emerald20};
 `;
 
 export const WarningText = styled.p`
   margin: 0 0 10px;
-  color: #425b56;
+
+  color: ${({ theme }) => theme.colors.body};
   font-size: 13px;
   line-height: 1.6;
 `;
 
 export const Copyright = styled.p`
   margin: 20px 0 0;
-  color: #425b56;
+
+  color: ${({ theme }) => theme.colors.body};
   font-size: 13px;
 `;

@@ -1,27 +1,31 @@
+"use client";
+
 import styled from "styled-components";
 
 export const MissionSection = styled.section`
   padding: 80px 24px;
-  background-color: #f3fbf8;
+  background-color: ${({ theme }) => theme.colors.emerald10};
 `;
 
 export const MissionContainer = styled.div`
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 48px;
+  padding: ${({ theme }) => theme.spacing.xxl};
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 56px;
-  background-color: #ffffff;
-  border: 1px solid #dce9e4;
+
+  background-color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.emerald20};
   border-radius: 28px;
 
-  @media (max-width: 768px) {
-    padding: 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: ${({ theme }) => theme.spacing.md};
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: ${({ theme }) => theme.spacing.lg};
   }
 `;
 
@@ -36,7 +40,7 @@ export const ImageWrapper = styled.div`
     object-fit: cover;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     min-height: 280px;
   }
 `;
@@ -48,51 +52,57 @@ export const MissionContent = styled.div`
 `;
 
 export const Tag = styled.span`
-  margin-bottom: 16px;
+  margin-bottom: ${({ theme }) => theme.spacing.sm};
   padding: 7px 14px;
-  color: #007e62;
-  background-color: #d5f7ea;
+
+  color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.emerald20};
   border-radius: 999px;
-  font-size: 14px;
+  font-size: ${({ theme }) => theme.typography.textSm.fontSize};
   font-weight: 600;
 `;
 
 export const Title = styled.h2`
   margin: 0 0 20px;
-  color: #071d1a;
+
+  color: ${({ theme }) => theme.colors.heading};
   font-size: 42px;
   line-height: 1.12;
 
-  @media (max-width: 768px) {
-    font-size: 32px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.typography.headlineBase.fontSize};
+    line-height: ${({ theme }) => theme.typography.headlineBase.lineHeight};
   }
 `;
 
 export const Description = styled.p`
-  margin: 0 0 32px;
-  color: #425b56;
+  margin: 0 0 ${({ theme }) => theme.spacing.lg};
+
+  color: ${({ theme }) => theme.colors.body};
   font-size: 18px;
   line-height: 1.7;
 `;
 
 export const ReportLink = styled.a`
+  padding: 15px ${({ theme }) => theme.spacing.md};
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 24px;
-  color: #ffffff;
-  background-color: #008f6b;
+
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #006f54;
+    background-color: ${({ theme }) => theme.colors.primaryHover};
   }
 
   &:focus-visible {
-    outline: 3px solid #65d6b4;
+    outline: 3px solid ${({ theme }) => theme.colors.emerald30};
     outline-offset: 3px;
   }
 `;

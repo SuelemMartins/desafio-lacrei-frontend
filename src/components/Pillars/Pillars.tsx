@@ -1,5 +1,3 @@
-"use client";
-
 import {
   CardDescription,
   CardsContainer,
@@ -14,9 +12,9 @@ import {
 
 export function Pillars() {
   return (
-    <PillarsSection id="pilares">
+    <PillarsSection id="pilares" aria-labelledby="titulo-pilares">
       <PillarsContainer>
-        <SectionTitle>Nossos Pilares</SectionTitle>
+        <SectionTitle id="titulo-pilares">Nossos Pilares</SectionTitle>
 
         <SectionDescription>
           Três fundamentos que orientam cada interação digital e presencial.

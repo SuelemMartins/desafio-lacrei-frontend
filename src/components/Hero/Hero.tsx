@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import {
@@ -32,7 +30,7 @@ export function Hero() {
           </Description>
 
           <Buttons>
-            <PrimaryLink href="pilares">
+            <PrimaryLink href="/#pilares">
               Conhecer nossos pilares
             </PrimaryLink>
 
